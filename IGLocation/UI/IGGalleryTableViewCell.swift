@@ -58,6 +58,7 @@ class IGGalleryTableViewCell: UITableViewCell {
             newVideoView.url = theMedia.url
 
             newVideoView.overlay(on: mediaImageView)
+            newVideoView.player.isMuted = true
 
             currentVideoView = newVideoView
         }
