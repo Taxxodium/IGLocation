@@ -27,20 +27,9 @@ class IGGalleryDetailViewController: UIViewController, UIScrollViewDelegate {
             if theMedia.type == .image {
                 self.imageView.sd_setImage(with: theMedia.url, completed: nil)
             } else {
-                let playerView = UIView(frame: .zero)
-                playerView.translatesAutoresizingMaskIntoConstraints = false
-
-                self.view.addSubview(playerView)
-
-                self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[playerView]-0-|", options: [], metrics: nil, views: ["playerView": playerView]))
-                self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[playerView]-0-|", options: [], metrics: nil, views: ["playerView": playerView]))
-
-                let player = AVPlayer(url: theMedia.url)
-                let playerLayer = AVPlayerLayer(player: player)
-                playerLayer.frame = self.view.bounds
-                playerView.layer.addSublayer(playerLayer)
-
-                player.play()
+                let playerView = IGVideoPlayerView(frame: .zero)
+                playerView.url = theMedia.url
+                playerView.attach(to: self.view)
             }
 
             self.title = self.media?.caption ?? "Image"

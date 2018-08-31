@@ -10,6 +10,7 @@
 		5683BAE0A5B1E5A17BEC8257 /* Pods_IGLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D83A710BD906CF85329994C /* Pods_IGLocation.framework */; };
 		8C26D0DB2138B2750050D4EC /* IGMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26D0DA2138B2750050D4EC /* IGMedia.swift */; };
 		8C26D0DD2138B7F80050D4EC /* IGMediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26D0DC2138B7F80050D4EC /* IGMediaTests.swift */; };
+		8C26D0DF2138EBB40050D4EC /* IGVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26D0DE2138EBB40050D4EC /* IGVideoPlayerView.swift */; };
 		8CCC146D212383C2007F40E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCC146C212383C2007F40E8 /* AppDelegate.swift */; };
 		8CCC146F212383C2007F40E8 /* IGGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCC146E212383C2007F40E8 /* IGGalleryViewController.swift */; };
 		8CCC1472212383C2007F40E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCC1470212383C2007F40E8 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		4D83A710BD906CF85329994C /* Pods_IGLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C26D0DA2138B2750050D4EC /* IGMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGMedia.swift; sourceTree = "<group>"; };
 		8C26D0DC2138B7F80050D4EC /* IGMediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGMediaTests.swift; sourceTree = "<group>"; };
+		8C26D0DE2138EBB40050D4EC /* IGVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGVideoPlayerView.swift; sourceTree = "<group>"; };
 		8CCC1469212383C2007F40E8 /* IGLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CCC146C212383C2007F40E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CCC146E212383C2007F40E8 /* IGGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGGalleryViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		8C26D0D92138B2290050D4EC /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8C26D0DE2138EBB40050D4EC /* IGVideoPlayerView.swift */,
 				8CCC14902124ECBB007F40E8 /* IGGalleryTableViewCell.swift */,
 			);
 			path = UI;
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CCC146F212383C2007F40E8 /* IGGalleryViewController.swift in Sources */,
+				8C26D0DF2138EBB40050D4EC /* IGVideoPlayerView.swift in Sources */,
 				8CCC14932124FFAE007F40E8 /* IGGalleryDetailViewController.swift in Sources */,
 				8C26D0DB2138B2750050D4EC /* IGMedia.swift in Sources */,
 				8CCC14912124ECBB007F40E8 /* IGGalleryTableViewCell.swift in Sources */,

@@ -18,7 +18,7 @@ class IGGalleryTableViewCell: UITableViewCell {
     @IBOutlet weak var mediaCommentsLabel: UILabel!
 
     @IBOutlet weak var mediaLikesLabel: UILabel!
-    fileprivate var currentVideoView: UIView?
+    fileprivate var currentVideoView: IGVideoPlayerView?
     fileprivate var currentVideoPlayer: AVPlayer?
 
     var media: IGMedia? {
@@ -33,17 +33,6 @@ class IGGalleryTableViewCell: UITableViewCell {
         containerView.clipsToBounds = true
         containerView.layer.cornerRadius = 10.0
         containerView.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
-
-        mediaImageView.alpha = 0
-
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil, queue: nil) { _ in
-            self.currentVideoPlayer?.seek(to: kCMTimeZero)
-            self.currentVideoPlayer?.play()
-        }
-    }
-
-    deinit {
-        NotificationCenter.default.removeObserver(self)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -62,32 +51,15 @@ class IGGalleryTableViewCell: UITableViewCell {
         }
 
         if theMedia.type == .image {
-            self.mediaImageView.sd_setImage(with: theMedia.url) { (image, err, cacheType, url) in
-                UIView.animate(withDuration: 0.25) {
-                    self.mediaImageView.alpha = 1.0
-                }
-            }
+            self.mediaImageView.sd_setImage(with: theMedia.url, completed: nil)
         } else {
-            let newVideoView = UIView(frame: .zero)
-            newVideoView.translatesAutoresizingMaskIntoConstraints = false
-            containerView.addSubview(newVideoView)
+            let newVideoView = IGVideoPlayerView(frame: .zero)
 
-            containerView.addConstraint(NSLayoutConstraint(item: newVideoView, attribute: .left, relatedBy: .equal, toItem: mediaImageView, attribute: .left, multiplier: 1.0, constant: 0))
-            containerView.addConstraint(NSLayoutConstraint(item: newVideoView, attribute: .right, relatedBy: .equal, toItem: mediaImageView, attribute: .right, multiplier: 1.0, constant: 0))
-            containerView.addConstraint(NSLayoutConstraint(item: newVideoView, attribute: .top, relatedBy: .equal, toItem: mediaImageView, attribute: .top, multiplier: 1.0, constant: 0))
-            containerView.addConstraint(NSLayoutConstraint(item: newVideoView, attribute: .bottom, relatedBy: .equal, toItem: mediaImageView, attribute: .bottom, multiplier: 1.0, constant: 0))
+            newVideoView.url = theMedia.url
 
-            let player = AVPlayer(url: theMedia.url)
-            player.isMuted = true
-            currentVideoPlayer = player
-
-            let videoLayer = AVPlayerLayer(player: player)
-            videoLayer.frame = self.mediaImageView.bounds
-            newVideoView.layer.addSublayer(videoLayer)
+            newVideoView.overlay(on: mediaImageView)
 
             currentVideoView = newVideoView
-
-            player.play()
         }
 
         self.mediaUsernameLabel.text = theMedia.username
