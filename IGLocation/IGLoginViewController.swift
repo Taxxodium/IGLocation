@@ -49,7 +49,7 @@ class IGLoginViewController: UIViewController, WKNavigationDelegate {
         self.view.addSubview(self.webView)
 
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[webView]-0-|", options: [], metrics: nil, views: ["webView": self.webView]))
-        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[webView]-0-|", options: [], metrics: nil, views: ["webView": self.webView]))
+        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[webView]-|", options: [], metrics: nil, views: ["webView": self.webView]))
 
         self.webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
     }
@@ -61,7 +61,7 @@ class IGLoginViewController: UIViewController, WKNavigationDelegate {
         self.view.addSubview(self.progressView)
 
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[progressView]-0-|", options: [], metrics: nil, views: ["progressView": self.progressView]))
-        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[progressView]", options: [], metrics: nil, views: ["progressView": self.progressView]))
+        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[progressView]", options: [], metrics: nil, views: ["progressView": self.progressView]))
     }
 
     // MARK: -
