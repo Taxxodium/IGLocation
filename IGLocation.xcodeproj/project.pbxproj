@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5683BAE0A5B1E5A17BEC8257 /* Pods_IGLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D83A710BD906CF85329994C /* Pods_IGLocation.framework */; };
+		8C26D0DB2138B2750050D4EC /* IGMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26D0DA2138B2750050D4EC /* IGMedia.swift */; };
+		8C26D0DD2138B7F80050D4EC /* IGMediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26D0DC2138B7F80050D4EC /* IGMediaTests.swift */; };
 		8CCC146D212383C2007F40E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCC146C212383C2007F40E8 /* AppDelegate.swift */; };
-		8CCC146F212383C2007F40E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCC146E212383C2007F40E8 /* ViewController.swift */; };
+		8CCC146F212383C2007F40E8 /* IGGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCC146E212383C2007F40E8 /* IGGalleryViewController.swift */; };
 		8CCC1472212383C2007F40E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCC1470212383C2007F40E8 /* Main.storyboard */; };
 		8CCC1474212383C4007F40E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CCC1473212383C4007F40E8 /* Assets.xcassets */; };
 		8CCC1477212383C4007F40E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCC1475212383C4007F40E8 /* LaunchScreen.storyboard */; };
-		8CCC1482212383C5007F40E8 /* IGLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCC1481212383C5007F40E8 /* IGLocationTests.swift */; };
+		8CCC148F21238D71007F40E8 /* IGLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCC148E21238D71007F40E8 /* IGLoginViewController.swift */; };
+		8CCC14912124ECBB007F40E8 /* IGGalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCC14902124ECBB007F40E8 /* IGGalleryTableViewCell.swift */; };
+		8CCC14932124FFAE007F40E8 /* IGGalleryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCC14922124FFAE007F40E8 /* IGGalleryDetailViewController.swift */; };
+		B104C5BFEF12B9F379759B08 /* Pods_IGLocationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2732DF9D14331A39998A68CF /* Pods_IGLocationTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +32,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2732DF9D14331A39998A68CF /* Pods_IGLocationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGLocationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E4E13197D4EB2F0260BAA3 /* Pods-IGLocationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGLocationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGLocationTests/Pods-IGLocationTests.release.xcconfig"; sourceTree = "<group>"; };
+		4C0B7842511484303597DFFD /* Pods-IGLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGLocation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGLocation/Pods-IGLocation.debug.xcconfig"; sourceTree = "<group>"; };
+		4D83A710BD906CF85329994C /* Pods_IGLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C26D0DA2138B2750050D4EC /* IGMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGMedia.swift; sourceTree = "<group>"; };
+		8C26D0DC2138B7F80050D4EC /* IGMediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGMediaTests.swift; sourceTree = "<group>"; };
 		8CCC1469212383C2007F40E8 /* IGLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CCC146C212383C2007F40E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CCC146E212383C2007F40E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CCC146E212383C2007F40E8 /* IGGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGGalleryViewController.swift; sourceTree = "<group>"; };
 		8CCC1471212383C2007F40E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CCC1473212383C4007F40E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CCC1476212383C4007F40E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CCC1478212383C4007F40E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CCC147D212383C5007F40E8 /* IGLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CCC1481212383C5007F40E8 /* IGLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGLocationTests.swift; sourceTree = "<group>"; };
 		8CCC1483212383C5007F40E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CCC148E21238D71007F40E8 /* IGLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGLoginViewController.swift; sourceTree = "<group>"; };
+		8CCC14902124ECBB007F40E8 /* IGGalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGGalleryTableViewCell.swift; sourceTree = "<group>"; };
+		8CCC14922124FFAE007F40E8 /* IGGalleryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGGalleryDetailViewController.swift; sourceTree = "<group>"; };
+		B72E0A1C134992EA08E62ADC /* Pods-IGLocationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGLocationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGLocationTests/Pods-IGLocationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDA87AAA07C89797F58A49F1 /* Pods-IGLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGLocation.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGLocation/Pods-IGLocation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5683BAE0A5B1E5A17BEC8257 /* Pods_IGLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +67,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B104C5BFEF12B9F379759B08 /* Pods_IGLocationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3239E073585E4B069397206A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D83A710BD906CF85329994C /* Pods_IGLocation.framework */,
+				2732DF9D14331A39998A68CF /* Pods_IGLocationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36AEF2A50852064169C36311 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B7842511484303597DFFD /* Pods-IGLocation.debug.xcconfig */,
+				DDA87AAA07C89797F58A49F1 /* Pods-IGLocation.release.xcconfig */,
+				B72E0A1C134992EA08E62ADC /* Pods-IGLocationTests.debug.xcconfig */,
+				33E4E13197D4EB2F0260BAA3 /* Pods-IGLocationTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C26D0D92138B2290050D4EC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8CCC14902124ECBB007F40E8 /* IGGalleryTableViewCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		8CCC1460212383C2007F40E8 = {
 			isa = PBXGroup;
 			children = (
 				8CCC146B212383C2007F40E8 /* IGLocation */,
 				8CCC1480212383C5007F40E8 /* IGLocationTests */,
 				8CCC146A212383C2007F40E8 /* Products */,
+				36AEF2A50852064169C36311 /* Pods */,
+				3239E073585E4B069397206A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +126,11 @@
 			isa = PBXGroup;
 			children = (
 				8CCC146C212383C2007F40E8 /* AppDelegate.swift */,
-				8CCC146E212383C2007F40E8 /* ViewController.swift */,
+				8CCC148E21238D71007F40E8 /* IGLoginViewController.swift */,
+				8CCC146E212383C2007F40E8 /* IGGalleryViewController.swift */,
+				8CCC14922124FFAE007F40E8 /* IGGalleryDetailViewController.swift */,
+				8C26D0DA2138B2750050D4EC /* IGMedia.swift */,
+				8C26D0D92138B2290050D4EC /* UI */,
 				8CCC1470212383C2007F40E8 /* Main.storyboard */,
 				8CCC1473212383C4007F40E8 /* Assets.xcassets */,
 				8CCC1475212383C4007F40E8 /* LaunchScreen.storyboard */,
@@ -90,7 +142,7 @@
 		8CCC1480212383C5007F40E8 /* IGLocationTests */ = {
 			isa = PBXGroup;
 			children = (
-				8CCC1481212383C5007F40E8 /* IGLocationTests.swift */,
+				8C26D0DC2138B7F80050D4EC /* IGMediaTests.swift */,
 				8CCC1483212383C5007F40E8 /* Info.plist */,
 			);
 			path = IGLocationTests;
@@ -103,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CCC1486212383C5007F40E8 /* Build configuration list for PBXNativeTarget "IGLocation" */;
 			buildPhases = (
+				54FE3AFC16674F2D3A7AA814 /* [CP] Check Pods Manifest.lock */,
 				8CCC1465212383C2007F40E8 /* Sources */,
 				8CCC1466212383C2007F40E8 /* Frameworks */,
 				8CCC1467212383C2007F40E8 /* Resources */,
+				C56EA151E67C8CDC16A736C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +174,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CCC1489212383C5007F40E8 /* Build configuration list for PBXNativeTarget "IGLocationTests" */;
 			buildPhases = (
+				A2EAC563D50DC4EA5AFF0281 /* [CP] Check Pods Manifest.lock */,
 				8CCC1479212383C5007F40E8 /* Sources */,
 				8CCC147A212383C5007F40E8 /* Frameworks */,
 				8CCC147B212383C5007F40E8 /* Resources */,
@@ -192,13 +247,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		54FE3AFC16674F2D3A7AA814 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IGLocation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2EAC563D50DC4EA5AFF0281 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IGLocationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C56EA151E67C8CDC16A736C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IGLocation/Pods-IGLocation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/InstagramKit/InstagramKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstagramKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGLocation/Pods-IGLocation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8CCC1465212383C2007F40E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CCC146F212383C2007F40E8 /* ViewController.swift in Sources */,
+				8CCC146F212383C2007F40E8 /* IGGalleryViewController.swift in Sources */,
+				8CCC14932124FFAE007F40E8 /* IGGalleryDetailViewController.swift in Sources */,
+				8C26D0DB2138B2750050D4EC /* IGMedia.swift in Sources */,
+				8CCC14912124ECBB007F40E8 /* IGGalleryTableViewCell.swift in Sources */,
 				8CCC146D212383C2007F40E8 /* AppDelegate.swift in Sources */,
+				8CCC148F21238D71007F40E8 /* IGLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CCC1482212383C5007F40E8 /* IGLocationTests.swift in Sources */,
+				8C26D0DD2138B7F80050D4EC /* IGMediaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +476,7 @@
 		};
 		8CCC1487212383C5007F40E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C0B7842511484303597DFFD /* Pods-IGLocation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +495,7 @@
 		};
 		8CCC1488212383C5007F40E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA87AAA07C89797F58A49F1 /* Pods-IGLocation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +514,7 @@
 		};
 		8CCC148A212383C5007F40E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B72E0A1C134992EA08E62ADC /* Pods-IGLocationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +536,7 @@
 		};
 		8CCC148B212383C5007F40E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33E4E13197D4EB2F0260BAA3 /* Pods-IGLocationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

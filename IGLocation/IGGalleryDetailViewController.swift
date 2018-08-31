@@ -7,13 +7,44 @@
 //
 
 import UIKit
+import SDWebImage
+import AVKit
 
-class IGGalleryDetailViewController: UIViewController {
+class IGGalleryDetailViewController: UIViewController, UIScrollViewDelegate {
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var imageView: UIImageView!
+
+    var media: IGMedia?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.scrollView.minimumZoomScale = 1.0
+        self.scrollView.maximumZoomScale = 3.0
+        self.scrollView.delegate = self
+
+        if let theMedia = media {
+            if theMedia.type == .image {
+                self.imageView.sd_setImage(with: theMedia.url, completed: nil)
+            } else {
+                let playerView = UIView(frame: .zero)
+                playerView.translatesAutoresizingMaskIntoConstraints = false
+
+                self.view.addSubview(playerView)
+
+                self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[playerView]-0-|", options: [], metrics: nil, views: ["playerView": playerView]))
+                self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[playerView]-0-|", options: [], metrics: nil, views: ["playerView": playerView]))
+
+                let player = AVPlayer(url: theMedia.url)
+                let playerLayer = AVPlayerLayer(player: player)
+                playerLayer.frame = self.view.bounds
+                playerView.layer.addSublayer(playerLayer)
+
+                player.play()
+            }
+
+            self.title = self.media?.caption ?? "Image"
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +52,7 @@ class IGGalleryDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return self.imageView
     }
-    */
-
 }
