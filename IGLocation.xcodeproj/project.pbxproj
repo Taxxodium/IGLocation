@@ -11,6 +11,7 @@
 		8C26D0DB2138B2750050D4EC /* IGMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26D0DA2138B2750050D4EC /* IGMedia.swift */; };
 		8C26D0DD2138B7F80050D4EC /* IGMediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26D0DC2138B7F80050D4EC /* IGMediaTests.swift */; };
 		8C26D0DF2138EBB40050D4EC /* IGVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26D0DE2138EBB40050D4EC /* IGVideoPlayerView.swift */; };
+		8C26D0E1213987910050D4EC /* IGVideoPlayerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26D0E0213987910050D4EC /* IGVideoPlayerViewTests.swift */; };
 		8CCC146D212383C2007F40E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCC146C212383C2007F40E8 /* AppDelegate.swift */; };
 		8CCC146F212383C2007F40E8 /* IGGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCC146E212383C2007F40E8 /* IGGalleryViewController.swift */; };
 		8CCC1472212383C2007F40E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCC1470212383C2007F40E8 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		8C26D0DA2138B2750050D4EC /* IGMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGMedia.swift; sourceTree = "<group>"; };
 		8C26D0DC2138B7F80050D4EC /* IGMediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGMediaTests.swift; sourceTree = "<group>"; };
 		8C26D0DE2138EBB40050D4EC /* IGVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGVideoPlayerView.swift; sourceTree = "<group>"; };
+		8C26D0E0213987910050D4EC /* IGVideoPlayerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGVideoPlayerViewTests.swift; sourceTree = "<group>"; };
 		8CCC1469212383C2007F40E8 /* IGLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CCC146C212383C2007F40E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CCC146E212383C2007F40E8 /* IGGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGGalleryViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		8CCC1480212383C5007F40E8 /* IGLocationTests */ = {
 			isa = PBXGroup;
 			children = (
+				8C26D0E0213987910050D4EC /* IGVideoPlayerViewTests.swift */,
 				8C26D0DC2138B7F80050D4EC /* IGMediaTests.swift */,
 				8CCC1483212383C5007F40E8 /* Info.plist */,
 			);
@@ -331,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C26D0DD2138B7F80050D4EC /* IGMediaTests.swift in Sources */,
+				8C26D0E1213987910050D4EC /* IGVideoPlayerViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
